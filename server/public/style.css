@@ -1,0 +1,71 @@
+#chat-box {
+  background-color: #7f7f7f;
+  color: #d0efff;
+  padding-block: 0.5rem;
+}
+
+#chat-box li {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #23372a,
+    #23272a 5px,
+    #1d1c21 5px,
+    #1d1c21 5px
+  );
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  list-style-type: none;
+  margin-bottom: 1rem;
+  max-width: 14rem;
+  padding: 0.2rem 1rem;
+}
+#text-box {
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 25%;
+  bottom: 1px;
+  width: 50%;
+  padding: 1rem;
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+#text-box textarea {
+  border: none;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  width: 80%;
+  height: 2rem;
+  padding: 0.3rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  resize: none;
+}
+
+#text-box textarea::-webkit-scrollbar-corner {
+  background-color: red;
+}
+
+#text-box textarea::-webkit-scrollbar {
+  background-color: green;
+  width: 0.3rem;
+}
+
+#text-box textarea:focus {
+  outline: none;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  width: 5rem;
+}
